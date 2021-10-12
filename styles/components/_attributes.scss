@@ -1,0 +1,63 @@
+.attributes {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 0 0 0;
+
+    #carouselAttributes {
+        display: none;
+    }
+
+    &__content {
+        margin: auto;
+        padding: 0 2rem 4rem 2rem;
+        margin:0 auto;
+
+
+        i {
+            font-size: 1.2rem;
+            opacity:0.8;
+        }
+        label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding-left:.5rem;
+        }
+        p {
+            width:10rem;
+            margin-top:1.2rem;
+        }
+    }
+}
+
+@include respond(e-reader) {
+    .attributes {
+        padding: 4rem 0 4rem 0;
+        justify-content: center !important;
+
+        #carouselAttributes {
+            display: inherit;
+
+            .carousel-item {
+                i {
+                    font-size: 1rem;
+                    opacity: 0.8;
+                }
+
+                label {
+                    font-weight: 600;
+                    padding-left: .5rem;
+                }
+
+                p {
+                    width: 10rem;
+                    margin-top: 1.2rem;
+                }
+            }
+        }
+
+        &__content {
+            display: none;
+        }
+    }
+}

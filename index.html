@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Site</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Contact US Links and Modules -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="header-top container-fluid">
+        <div class="container-xl d-flex justify-content-between header-top-wrapper">
+            <div>
+                <p>Welcome to our Online Store!</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+1-305-000-1111</p>
+                <i class="fas fa-envelope"></i>
+                <p>info@purdygoods.com</p>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="#">
+                <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact_us">Contact us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+                <form class="d-flex search_bg">
+                    <input class="form-control search_input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success search_button" type="submit"><i
+                            class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero container-fluid ">
+        <div class="container-sm hero__text">
+            <h1>Purdy Goods Shoppe</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cumque.</p>
+            <button class="btn btn-primary">SHOP NOW</button>
+        </div>
+    </div>
+
+    <div class="container-xl d-flex justify-content-between attributes">
+        <div class="attributes__content">
+            <i class="fas fa-shipping-fast"></i>
+            <label>Free Shipping</label>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="attributes__content">
+            <i class="fas fa-shipping-fast"></i>
+            <label>Free Shipping</label>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="attributes__content">
+            <i class="fas fa-shipping-fast"></i>
+            <label>Free Shipping</label>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="attributes__content">
+            <i class="fas fa-shipping-fast"></i>
+            <label>Free Shipping</label>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div id="carouselAttributes" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <i class="fas fa-shipping-fast"></i>
+                    <label>Free Shipping</label>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <label>Free Shipping</label>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fas fa-shipping-fast"></i>
+                    <label>Free Shipping</label>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl d-flex justify-content-center flex-column featured-wrapper new_arrivals">
+        <h2>New Arrivals</h2>
+        <div class="featured">
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="/media/il_1140xN.2099490485_obcv.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull, Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="https://i.etsystatic.com/20344660/r/il/2613f7/3094699797/il_1588xN.3094699797_bfk5.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Antique Brass Knobs, Cabinet Drawer Pull, Modern Cabinet Hardware Farmhouse
+                            Drawer Pull
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="https://i.etsystatic.com/20344660/r/il/9d1290/2677520145/il_1588xN.2677520145_lh3c.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass slate Blue Cabinet Knob with Gold Edge Finish Drawer Pull, Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="https://i.etsystatic.com/20344660/r/il/ab3c30/2291847164/il_1588xN.2291847164_i79f.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Polished Nickel Transitional "Queen" Cabinet Knob and Pulls, Drawer Pull,
+                            Kitchen Cabinet Hardware
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div id="carouselProductsArrivals" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProductsArrivals" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProductsArrivals" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProductsArrivals" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselProductsArrivals" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="https://i.etsystatic.com/20344660/r/il/2f0fd5/2314192436/il_1588xN.2314192436_ejmc.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="/media/il_1140xN.2099490485_obcv.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="/media/il_1140xN.2099490485_obcv.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="/media/il_1140xN.2099490485_obcv.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductsArrivals"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProductsArrivals"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i
+                            class="fas fa-angle-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl d-flex justify-content-center flex-column featured-wrapper top_categories">
+        <h2>Top Categories</h2>
+        <div class="featured">
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href="#">
+                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div id="carouselProductsCategories" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href="#">
+                                    <img src="/media/il_794xN.2997443884_s4e4.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductsCategories"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProductsCategories"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i
+                            class="fas fa-angle-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid product_attributes">
+        <div class="container-xl d-flex product-attribute-wrapper">
+            <div class="featured__product card">
+                <img src="https://i.etsystatic.com/20344660/r/il/9d305d/2496750201/il_794xN.2496750201_cjqk.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, soluta.
+                    </p>
+                </div>
+            </div>
+            <div class="featured__product card">
+                <img src="https://i.etsystatic.com/20344660/r/il/a42452/2875378740/il_794xN.2875378740_757b.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+            <div class="featured__product card">
+                <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus suscipit illum
+                        cupiditate.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact_us" class="container-xl d-flex justify-content-center contact-us">
+        <div class="mb-4">
+            <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+
+            <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to
+                contact us
+                directly. Our team will come back to you within
+                a matter of hours to help you.</p>
+
+            <div class="row">
+
+
+                <div class="col-md-9 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+
+                        <div class="row">
+
+
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2"
+                                        class="form-control md-textarea"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                    <div class="text-center text-md-left">
+                        <a class="btn btn-primary" onclick="validateForm();">Send</a>
+                    </div>
+                    <div class="status"></div>
+                </div>
+
+                <div class="col-md-3 text-center">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                            <p>United States of America</p>
+                        </li>
+
+                        <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                            <p>+ 01 234 567 89</p>
+                        </li>
+
+                        <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                            <p>contact@mdbootstrap.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid testimonials">
+        <div class="container-xl d-flex justify-content-center testimonials-wrapper">
+            <div class="photo-gallery-container">
+                <h3>Photo Gallery</h3>
+                <div class="photo-gallery">
+                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                        class="photo-gallery__img" alt="...">
+                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                        class="photo-gallery__img" alt="...">
+                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                        class="photo-gallery__img" alt="...">
+                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                        class="photo-gallery__img" alt="...">
+                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                        class="photo-gallery__img" alt="...">
+                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                        class="photo-gallery__img" alt="...">
+                </div>
+            </div>
+            <div class="carousel-testimonial-container">
+                <h3>Our Testimonials</h3>
+                <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselTestimonials" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-block w-100" alt="...">
+                                <div class="testimonial-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cupiditate ducimus
+                                        tempora nostrum iusto. Dolorem doloribus magnam nihil quam temporibus?</p>
+                                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                                        class="testimonial-card__img" alt="...">
+                                    <label for="testimonial-name">Cristina Tio</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100" alt="...">
+                                <div class="testimonial-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis deserunt quod
+                                        distinctio reiciendis consequuntur, quas, mollitia obcaecati fugit facere velit
+                                        deleniti ratione id quos esse sunt ipsa veritatis adipisci! Cum.</p>
+                                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                                        class="testimonial-card__img" alt="...">
+                                    <label for="testimonial-name">Cristina Tio</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100" alt="...">
+                                <div class="testimonial-card">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tenetur praesentium
+                                        cupiditate iure eaque animi? Eaque natus accusantium quia nisi perferendis odio
+                                        enim
+                                        laborum sequi illum nihil consectetur ut placeat eveniet, corrupti maiores,
+                                        libero
+                                        tempore?</p>
+                                    <img src="https://i.etsystatic.com/20344660/r/il/b21837/2789571076/il_794xN.2789571076_t0dn.jpg"
+                                        class="testimonial-card__img" alt="...">
+                                    <label for="testimonial-name">Cristina Tio</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                                class="fas fa-angle-left"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                class="fas fa-angle-right"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container-fluid">
+        <div class="container-xl d-flex justify-content-between footer-wrapper">
+            <div class="footer-contact-address">
+                <h5>Contact us</h5>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>United States of America</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>contact@mdbootstrap.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-navigation">
+                <h5>Purdy Goods Shoppe</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom container-fluid">
+        <div class="container-xl d-flex justify-content-center footer-wrapper">
+            <p>Copyright © 2021 . Purdy Goods Shoppe</p>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/0ca4aad332.js" crossorigin="anonymous"></script>
+
+    <!-- Node Modules for Contact US Page -->
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+
+
+    <script>
+
+        // Product Card Text Length Limiter
+        function truncateText(text, maxLength) {
+            var truncated = text;
+
+            if (truncated.length > maxLength) {
+                truncated = truncated.substr(0, maxLength) + '...';
+            }
+            return truncated;
+        }
+
+        document.querySelectorAll('.card-text').forEach((element) => element.innerText = truncateText(element.innerText, 30))
+
+
+        // Contact Us Validator 
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            if (name == "") {
+                document.querySelector('.status').innerHTML = "Name cannot be empty";
+                return false;
+            }
+            var email = document.getElementById('email').value;
+            if (email == "") {
+                document.querySelector('.status').innerHTML = "Email cannot be empty";
+                return false;
+            } else {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (!re.test(email)) {
+                    document.querySelector('.status').innerHTML = "Email format invalid";
+                    return false;
+                }
+            }
+            var subject = document.getElementById('subject').value;
+            if (subject == "") {
+                document.querySelector('.status').innerHTML = "Subject cannot be empty";
+                return false;
+            }
+            var message = document.getElementById('message').value;
+            if (message == "") {
+                document.querySelector('.status').innerHTML = "Message cannot be empty";
+                return false;
+            }
+            document.querySelector('.status').innerHTML = "Sending...";
+        }
+
+
+        // 
+
+    </script>
+</body>
+
+</html>

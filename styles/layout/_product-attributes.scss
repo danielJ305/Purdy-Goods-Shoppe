@@ -1,0 +1,44 @@
+.product_attributes {
+    background-color: lightblue;
+    padding:6rem 0;
+
+    @media only screen and (max-width: 888px) {
+        padding:4rem 0;
+    }
+
+    .product-attribute-wrapper {
+        justify-content: center;  
+            flex-wrap: wrap;
+
+        .card {
+            margin: 0 1rem;
+            max-width: 20rem;
+            flex-direction: column-reverse;
+            flex: 1;
+
+            @include respond(tablet) {
+                max-width: 16rem;
+                min-width: 16rem;
+            }
+
+            @media only screen and (max-width: 888px) {
+                margin-top: 2rem;
+            }
+
+            p {
+                text-align: center;
+                padding:1rem;
+            }
+
+            img {
+                height: 19rem;
+                object-fit: cover;
+
+                @include respond(tablet) {
+                                    height: 16rem;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.navbar {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.navbar #navbarSupportedContent {
+    ul {
+        margin-left: auto;
+        margin-right: 2rem !important;
+
+        li {
+            margin: 0 1rem;
+        }
+    }
+}
+
+.header-top {
+    .header-top-wrapper {
+        div:last-child {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-left: .5rem;
+            }
+            i {
+                margin-left:2rem;
+            }
+        }
+    }
+
+    @media  only screen and (max-width:600px) {
+        display: none;
+    }
+}
+
+// Mobile CSS
+@media only screen and (max-width:992px) {
+    #navbarSupportedContent {
+        padding-top: 1rem;
+
+        ul {
+            li {
+                a {
+                    padding: 1.2rem .6rem
+                }
+            }
+        }
+    }
+}
+
+

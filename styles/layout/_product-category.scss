@@ -1,0 +1,24 @@
+.product-category-container {
+
+    .product-category {
+        flex-direction: column;
+
+        &__selector {
+            display: flex;
+            justify-content: space-between;
+            padding:4rem 0 1rem 0;
+        }
+
+        &__products {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 10px;
+            row-gap: 20px;
+
+            .products {
+                @include productCard;
+                max-width: 16rem !important;
+            }
+        }
+    }
+}

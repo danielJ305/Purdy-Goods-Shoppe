@@ -1,0 +1,24 @@
+.hero-small {
+    background-color: lightblue;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+
+    &__text {
+        p {
+            padding: 1rem 0;
+        }
+    }
+}
+
+@include respond(tablet) {
+    .hero-small {
+        min-height: 60vh;
+    }
+}
+
+@include respond(e-reader) {
+    .hero-small {
+        min-height: 55vh;
+    }
+}
