@@ -1,24 +1,32 @@
 .hero-small {
-    background-color: lightblue;
-    min-height: 35vh;
+        background-image: url(/media/hero-bg-02-01.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    min-height: 60vh;
     display: flex;
     align-items: center;
 
     &__text {
+        h1 {
+            margin-top: 4rem;
+        }
         p {
-            padding: 1rem 0;
+            margin-top: -0.5rem;
         }
     }
 }
 
 @include respond(tablet) {
     .hero-small {
-        min-height: 60vh;
-    }
-}
+        &__text {
+            h1 {
+                line-height: 1;
+                font-size: 5.38rem * 0.8;
+                margin-bottom: 1rem;
+            }
 
-@include respond(e-reader) {
-    .hero-small {
-        min-height: 55vh;
+
+        }
     }
 }

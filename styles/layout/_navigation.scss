@@ -1,7 +1,25 @@
 .navbar {
+    z-index: 100;
+    position:absolute;
+    top:52.8px;
+    width: 100vw;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
+    background-color: $secondary !important;
+
+    img {
+        object-fit: cover;
+        width: 7rem;
+        height: auto;
+        
+    }
+
+    @media only screen and (max-width:600px) {
+        top: 0px;
+    }
 }
+
+
 
 .navbar #navbarSupportedContent {
     ul {
@@ -14,27 +32,8 @@
     }
 }
 
-.header-top {
-    .header-top-wrapper {
-        div:last-child {
-            display: flex;
-            align-items: center;
 
-            p {
-                margin-left: .5rem;
-            }
-            i {
-                margin-left:2rem;
-            }
-        }
-    }
 
-    @media  only screen and (max-width:600px) {
-        display: none;
-    }
-}
-
-// Mobile CSS
 @media only screen and (max-width:992px) {
     #navbarSupportedContent {
         padding-top: 1rem;

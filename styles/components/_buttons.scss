@@ -1,0 +1,63 @@
+.custom-button-one {
+    color: $dark;
+    background-color: $primary;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: $md;
+    width:12rem;
+    padding:$xs-md;
+
+    a {
+font-family: proxima-nova-condensed,
+sans-serif;
+font-weight: 600;
+font-style: normal;
+    }
+}
+
+.custom-button-hero {
+    color: $light;
+    background-color: $quinary;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: $md;
+    width: 12rem;
+    padding: $xs-md;
+
+    a {
+        color: $light;
+        font-family: proxima-nova-condensed,
+            sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+.custom-button-cta {
+    color: $light;
+    background-color: $quaternary;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: $sm-md;
+    width: 10rem;
+    padding: $xs-md;
+
+    a {
+font-family: proxima-nova-condensed,
+sans-serif;
+font-weight: 600;
+font-style: normal;
+    }
+}
+
+.custom-button-one:hover {
+    background-color: lighten($color: $primary, $amount: 20%);
+
+}
+
+.custom-button-cta:hover {
+    background-color: lighten($color: $quaternary, $amount: 20%);
+}

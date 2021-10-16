@@ -1,0 +1,225 @@
+.product-section {
+    margin:13rem 0 4rem 0;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        .product-gallery {
+            display: flex;
+            flex:2;
+
+            &__array {
+                display: flex;
+                flex-direction: column;
+                overflow: scroll;
+                scrollbar-width: none;
+                max-height: 502px;
+
+                &__img-wrapper {
+                    width: 100%;
+                    height: auto;
+                    max-width: 6rem;
+                    max-height: 6rem;
+                    margin: 0 0 1rem 0;
+                    list-style-type: none;
+                    border: 5px;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        cursor: zoom-in;
+
+                    }
+                }
+
+                @include respond(e-reader) {
+                    flex-direction: row;
+                }
+                
+            }
+
+            &__main {
+
+
+                position: relative;
+                width: 100%;
+
+                &__img-wrapper {
+                    margin: auto;
+                    padding:0 2rem;
+                    width: 100%;
+                    height: auto;
+                    max-width: 30rem;
+                    max-height: 30rem;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 30rem;
+                        display: block;
+                        border-radius: 5px;
+                        cursor: zoom-in;
+                    }
+                    
+                    @include overlay
+
+                    
+                }
+
+                &__img-wrapper:hover .overlay {
+                    opacity: 1;
+                }
+
+
+                .gallery-navigation-wrapper {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 50%;
+
+                    .gallery-navigation {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 2rem;
+                        top: 3rem;
+
+                        &__btn {
+                            width:3rem;
+                            height: 3rem;
+                            border: none;
+                            background-color: lighten($color: $dark, $amount: 70%);
+                            border-radius: 50%;
+                            transition: background-color 0.15s ease-in;
+                            
+                            i {
+                                color: $dark;
+                                transition: color 0.15s ease-in;
+                            }
+                        }
+
+                        &__btn:hover {
+                            background-color: lighten($color: $dark, $amount: 50%);
+
+                            i {
+                                color: $light;
+                            }
+                        }
+
+                        &__prev {
+                            // margin-right: 100%;
+                        }
+
+                        &__next {
+                            // margin-left: 100%;
+                        }
+
+
+                    }
+
+                    @include respond(tablet) {
+                        width:110% !important;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+
+                        .gallery-navigation {
+                            margin: 0 2.22rem;     
+                        }
+                    }
+
+                    @include respond(tablet-sm) {
+
+                        .gallery-navigation {
+                            margin: 0 4rem;
+                        }
+                    }
+
+                    @include respond(e-reader) {
+
+                        .gallery-navigation {
+                            margin: 0 2rem;
+                        }
+                    }
+
+                    @include respond(phone) {
+
+                        .gallery-navigation {
+                            margin: 0 1.6rem;
+                        }
+                    }
+                }
+
+                @include respond(phone) {
+                    &__img-wrapper {
+                        .overlay {
+                            bottom: 0rem;
+                        }
+                    }
+                }
+
+                @include respond(tablet) {
+                    &__img-wrapper {
+                        .overlay {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+
+                
+            }
+
+            @include respond(e-reader) {
+                flex-direction: column-reverse;
+
+                &__array {
+
+
+                    justify-content: center;
+                    &__img-wrapper {
+                        margin: 2rem 0.5rem;
+                    }
+                }
+
+                &__main {
+                    &__img-wrapper {
+                        padding:0 0rem;
+                    }
+                }
+            }
+        }
+
+        .product-description {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            &__name {
+                font-size: $sm-md;
+            }
+
+            &__price {
+                margin:1rem 0 2rem 0;
+                font-size: $md-md;
+                font-weight: bold;
+            }
+        }
+
+        @include respond(tablet-sm) {
+            flex-direction: column;
+
+            .product-description {
+                margin-top: 3rem;
+            }
+        }
+        @include respond(e-reader) {
+            margin-top: 10rem;
+            .product-description {
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    @include respond(e-reader) {
+        margin-top: 8rem;
+    }
+}

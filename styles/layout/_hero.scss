@@ -1,24 +1,51 @@
 .hero {
-    background-color: lightblue;
-    min-height: 65vh;
+    background-image: url(/media/hero-bg-02-01.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     align-items: center;
 
     &__text {
+
+        h2 {
+            margin-top: -1.8rem;
+            margin-bottom: 1rem;
+        }
+
         p {
-            padding: 2rem 0;
+            max-width: 40rem;
+            font-size: $sm-md;
+        }
+        
+    }
+
+    button{
+        margin: 1rem 0 0 0;
+    }
+}
+
+@include respond(tablet-sm) {
+    .hero {
+
+        &__text {
+            h1 {
+                line-height: 1;
+                font-size: 5.38rem * 0.8;
+            }
+
+            h2 {
+                margin-top: 0rem;
+
+            }
         }
     }
 }
 
-@include respond(tablet) {
-    .hero {
-        min-height: 60vh;
-    }
-}
-
-@include respond(e-reader) {
-    .hero {
-        min-height: 55vh;
-    }
-}
+// @include respond(e-reader) {
+//     .hero {
+//         min-height: 70vh;
+//     }
+// }

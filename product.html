@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Site</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Contact US Links and Modules -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ulo0fdb.css">
+
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="header-top container-fluid">
+        <div class="container-xl d-flex justify-content-between header-top-wrapper">
+            <div>
+                <p>Welcome to our Online Store!</p>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <p>+1-305-000-1111</p>
+                <i class="fas fa-envelope"></i>
+                <p>info@purdygoods.com</p>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-xl">
+            <a class="navbar-brand" href="index.html">
+                <img src="media\Purgy-Goods-Shoppe-15.png" alt="" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="categories.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html?#contact_us">Contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex search_bg">
+                    <input class="form-control search_input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success search_button" type="submit"><i
+                            class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="product-section container-fluid">
+        <div class="product-section__container container-xl">
+            <div class="product-gallery">
+                <div class="product-gallery__array">
+                    <li class="product-gallery__array__img-wrapper">
+                        <img src="https://i.etsystatic.com/20344660/r/il/8d4c8f/2496750415/il_794xN.2496750415_9yib.jpg"
+                            class="" alt="...">
+                    </li>
+                    <li class="product-gallery__array__img-wrapper">
+                        <img src="https://i.etsystatic.com/20344660/r/il/f69422/2496748655/il_794xN.2496748655_jmkv.jpg"
+                            class="" alt="...">
+                    </li>
+                    <li class="product-gallery__array__img-wrapper">
+                        <img src="https://i.etsystatic.com/20344660/r/il/7404b3/2449122634/il_794xN.2449122634_7xn6.jpg"
+                            class="" alt="...">
+                    </li>
+                    <li class="product-gallery__array__img-wrapper">
+                        <img src="https://i.etsystatic.com/20344660/r/il/9143a4/2449122318/il_794xN.2449122318_a21x.jpg"
+                            class="" alt="...">
+                    </li>
+                    <li class="product-gallery__array__img-wrapper">
+                        <img src="https://i.etsystatic.com/20344660/r/il/63b36a/2496749265/il_794xN.2496749265_fc1e.jpg"
+                            class="" alt="...">
+                    </li>
+                </div>
+                <div class="product-gallery__main">
+                    <div class="product-gallery__main__img-wrapper">
+                        <img src="https://i.etsystatic.com/20344660/r/il/9d305d/2496750201/il_794xN.2496750201_cjqk.jpg"
+                            class="product-gallery-main-img" alt="...">
+                        <div class="overlay">
+                            <p>Wire Mesh Satin Brass Furniture and Creative Grille Mesh</p>
+                        </div>
+                    </div>
+                    <div class="gallery-navigation-wrapper">
+                        <div class="gallery-navigation">
+                            <button class="gallery-navigation__btn gallery-navigation__prev"><i
+                                    class="fas fa-angle-left"></i></button>
+                            <button class="gallery-navigation__btn gallery-navigation__next"><i
+                                    class="fas fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-description">
+                <p class="product-description__name">Wire Mesh Satin Brass Furniture and Creative Grille Mesh</p>
+                <label class="product-description__price">$19.99+</label>
+                <button class="custom-button-one">Buy</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-xl d-flex justify-content-center flex-column featured-wrapper top_categories">
+        <h2>Top Categories</h2>
+        <div class="featured">
+            <div class="featured__product card single-card">
+                <a href=product.html>
+                    <img src="https://i.etsystatic.com/20344660/r/il/16b1ee/3049506262/il_794xN.3049506262_m2h5.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href=product.html>
+                    <img src="https://i.etsystatic.com/20344660/r/il/5271e9/2432894271/il_794xN.2432894271_37o2.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href=product.html>
+                    <img src="https://i.etsystatic.com/20344660/r/il/bd764a/2496721809/il_794xN.2496721809_9fj7.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="featured__product card single-card">
+                <a href=product.html>
+                    <img src="https://i.etsystatic.com/20344660/r/il/29da13/2305925070/il_794xN.2305925070_k4r3.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White Marble Drawer Pull,
+                            Modern
+                            Cabinet Hardware Farmhouse
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div id="carouselProductsCategories" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselProductsCategories" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href=product.html>
+                                    <img src="https://i.etsystatic.com/20344660/r/il/16b1ee/3049506262/il_794xN.3049506262_m2h5.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href=product.html>
+                                    <img src="https://i.etsystatic.com/20344660/r/il/5271e9/2432894271/il_794xN.2432894271_37o2.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href=product.html>
+                                    <img src="https://i.etsystatic.com/20344660/r/il/bd764a/2496721809/il_794xN.2496721809_9fj7.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100" alt="...">
+                            <div class="featured__product card">
+                                <a href=product.html>
+                                    <img src="https://i.etsystatic.com/20344660/r/il/29da13/2305925070/il_794xN.2305925070_k4r3.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Brass Cabinet Knob "Rectangle" Brass and White
+                                            Marble
+                                            Drawer Pull, Modern
+                                            Cabinet Hardware Farmhouse
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductsCategories"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselProductsCategories"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i
+                            class="fas fa-angle-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container-fluid">
+        <div class="container-xl d-flex justify-content-between footer-wrapper">
+            <div class="footer-contact-address">
+                <h5>Contact us</h5>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>United States of America</p>
+                    </li>
+
+                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+ 01 234 567 89</p>
+                    </li>
+
+                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>contact@mdbootstrap.com</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-navigation">
+                <h5>Purdy Goods Shoppe</h5>
+                <ul>
+                    <li><a href=index.html>Home</a></li>
+                    <li><a href=categories.html>Shop</a></li>
+                    <li><a href=index.html#contact_us>Contact Us</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom container-fluid">
+        <div class="container-xl d-flex justify-content-center footer-wrapper">
+            <p>Copyright © 2021 . Purdy Goods Shoppe</p>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/0ca4aad332.js" crossorigin="anonymous"></script>
+
+    <!-- Node Modules for Contact US Page -->
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+
+    <script>
+        // Product Card Text Length Limiter
+        function truncateText(text, maxLength) {
+            var truncated = text;
+
+            if (truncated.length > maxLength) {
+                truncated = truncated.substr(0, maxLength) + '...';
+            }
+            return truncated;
+        }
+
+        document.querySelectorAll('.overlay').forEach((element) => element.innerText = truncateText(element.innerText, 35))
+
+        // Overlay Text Size
+
+        const resizeOverlayGallery = () => {
+            const productGalleryMain_img = document.querySelector('.product-gallery-main-img').clientWidth;
+            const productGalleryMain_overlay = document.querySelector('.overlay');
+
+            productGalleryMain_overlay.style.width = `${productGalleryMain_img}px`;
+        }
+
+        $(window).resize(function () {
+            resizeOverlayGallery();
+        });
+
+        addEventListener('load', () => resizeOverlayGallery());
+
+
+
+
+    </script>
+</body>
+
+</html>

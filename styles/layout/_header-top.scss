@@ -1,8 +1,35 @@
 .header-top {
-    background: pink;
-    padding:0;
+        position: absolute;
+        width: 100vw;
+        top:0;
+        background: $quinary;
+        padding:0;
+        height: 58.2px;
 
-    p {
-        margin: 1rem 0;
+        p {
+            margin: 1rem 0;
+        }
+
+        i,
+        p {
+            color: $light;
+        }
+    .header-top-wrapper {
+        div:last-child {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-left: .5rem;
+            }
+
+            i {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        display: none;
     }
 }

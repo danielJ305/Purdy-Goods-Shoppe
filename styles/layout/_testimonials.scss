@@ -1,5 +1,6 @@
 .testimonials {
-    background-color:lightgreen;
+    background-color:#CFDBD5;
+    margin-top: -2rem;
 
     .testimonials-wrapper {
         flex-wrap: wrap;
@@ -103,4 +104,14 @@
         }
 
     }
+
+    @include respond(tablet) {
+        margin-top: -0.1rem;
+    }
 }
+
+.testimonials-svg-bottom {
+    margin-top: -0.1rem;
+}
+
+

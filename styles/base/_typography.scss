@@ -1,23 +1,81 @@
 h1 {
-    font-size:5.38em;
+    font-size:5.38rem;
+font-family: proxima-nova-condensed,
+sans-serif;
+font-weight: 600;
+font-style: normal;
+color: $dark;
+
 }
 
 h2 {
-    font-size:3.84em;
+    font-size:3.84rem * .6;
+font-family: proxima-nova,
+sans-serif;
+font-weight: 700;
+font-style: normal;
+color: $dark;
 }
 
 h3 {
-    font-size:2.74em;
+    font-size:2.74rem;
+font-family: proxima-nova,
+sans-serif;
+font-weight: 700;
+font-style: normal;
+color: $dark;
 }
 
 h4 {
-    font-size:1.96em;
+    font-size:1.96rem;
+font-family: proxima-nova,
+sans-serif;
+font-weight: 700;
+font-style: normal;
+color: $dark;
 }
 
 h5 {
-    font-size:1.4em;
+    font-size:1.4rem;
+font-family: proxima-nova,
+sans-serif;
+font-weight: 700;
+font-style: normal;
+color: $dark;
+
 }
 
 p {
-    font-size:1em;
+    font-family: basic-sans,
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+color: $dark;
+
 }
+
+label, button {
+    font-family: bree,
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+color: $dark;
+
+}
+
+li, a {
+    font-family: basic-sans,
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+color: $dark;
+
+}
+
+a:hover {
+    color: lighten($color: $dark, $amount: 25%)
+}
+
+
+

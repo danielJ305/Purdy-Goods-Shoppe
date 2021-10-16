@@ -56,7 +56,25 @@
     line-height: 40px;
     width: 0px;
     font-weight: bold;
+    
 }
+
+.search_input::-webkit-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+.search_input::-ms-input-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+.search_input::-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
+.search_input::-moz-placeholder {
+    font-family: 'myFont', Arial, Helvetica, sans-serif;
+}
+
 .search_input:focus {
     box-shadow: none;
 }
