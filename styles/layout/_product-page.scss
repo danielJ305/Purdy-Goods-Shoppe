@@ -63,9 +63,7 @@
                         cursor: zoom-in;
                     }
                     
-                    @include overlay
-
-                    
+                    @include overlay;
                 }
 
                 &__img-wrapper:hover .overlay {

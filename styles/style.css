@@ -864,7 +864,7 @@ a:hover {
 }
 .showcase .showcase-wrapper .overlay {
   position: absolute;
-  bottom: 1.28rem;
+  bottom: 0;
   background: black;
   background: rgba(0, 0, 0, 0.4);
   color: #f1f1f1 !important;
@@ -997,7 +997,7 @@ a:hover {
 }
 .product-section__container .product-gallery__main__img-wrapper .overlay {
   position: absolute;
-  bottom: 1.28rem;
+  bottom: 0;
   background: black;
   background: rgba(0, 0, 0, 0.4);
   color: #f1f1f1 !important;
