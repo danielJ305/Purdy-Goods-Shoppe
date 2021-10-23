@@ -37,6 +37,15 @@
     }
 }
 
+@include respond(tablet-sm) {
+    .attributes {
+        padding-top:1rem;
+        .attributes__content {
+            margin-top: 2rem;
+        }
+    }
+}
+
 @include respond(e-reader) {
     .attributes {
         padding: 4rem 0 4rem 0;

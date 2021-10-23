@@ -25,6 +25,7 @@
                 max-width: 40rem;
                 font-size: $sm;
                 line-height: 1.6;
+                padding-right: 2rem;
             }
         
         }
@@ -50,10 +51,28 @@
     }
 }
 
+@include respond(tablet) {
+    .hero {
+
+        &__main {
+            h1 {
+                line-height: 1;
+            }
+                        h2 {
+                            margin-top: 0rem;
+
+                        }
+        }
+    }
+}
+
 @include respond(tablet-sm) {
     .hero {
 
         &__main {
+            margin-top: 8rem;
+            flex-direction: column;
+
             h1 {
                 line-height: 1;
                 font-size: 5.38rem * 0.8;
@@ -62,6 +81,24 @@
             h2 {
                 margin-top: 0rem;
 
+            }
+
+            &-img {
+                margin: 4rem 0 4rem 0;
+            }
+        }
+    }
+}
+
+@include respond(phone) {
+    .hero {
+
+        &__main {
+            margin-top: 8rem;
+            flex-direction: column;
+
+            &-img {
+                margin: 4rem auto 4rem auto;
             }
         }
     }
