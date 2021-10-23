@@ -1,5 +1,6 @@
 .hero {
-    background-image: url(/media/hero-bg-02-01.svg);
+    // background-image: url(/media/hero-bg-brush-02-03.svg);
+    background: $secondary;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -8,18 +9,40 @@
     display: flex;
     align-items: center;
 
-    &__text {
+    &__main {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
 
-        h2 {
-            margin-top: -1.8rem;
-            margin-bottom: 1rem;
-        }
+        &-text {
+            h2 {
+                margin-top: -1.5rem;
+                margin-bottom: 1rem;
+            }
 
-        p {
-            max-width: 40rem;
-            font-size: $sm-md;
-        }
+            p {
+                max-width: 40rem;
+                font-size: $sm;
+                line-height: 1.6;
+            }
         
+        }
+
+        &-img {
+            margin: auto 0;
+
+            img {
+                width: 20rem;
+                height: 20rem;
+                object-fit: cover;
+                box-shadow: 20px 20px 0px #ef9273;
+                -moz-box-shadow: 20px 20px 0px #ef9273;
+                -webkit-box-shadow: 20px 20px 0px #ef9273;
+                -khtml-box-shadow: 20px 20px 0px #ef9273;
+            }
+        }
+       
     }
 
     button{
@@ -30,7 +53,7 @@
 @include respond(tablet-sm) {
     .hero {
 
-        &__text {
+        &__main {
             h1 {
                 line-height: 1;
                 font-size: 5.38rem * 0.8;

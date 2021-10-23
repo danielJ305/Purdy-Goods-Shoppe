@@ -1,5 +1,5 @@
 .search_bg {
-    background-color: #2f3640;
+    background-color: $primary;
     height: 50px;
     border-radius: 50px;
     padding: 10px;
@@ -12,22 +12,21 @@
 }
 
 .search_bg:hover > .search_button {
-    background: azure !important;
-    color: #2f3640 !important;
+    background: $light !important;
+    color: $primary !important;
 }
 
 .search_button {
-    color: #e84118;
     float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #2f3640;
+    background: $primary;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.4s;
-    color: azure;
+    color: $light;
     cursor: pointer;
     border: none;
     padding: 0 !important;
@@ -35,8 +34,8 @@
 }
 
 .btn-outline-success {
-    color: azure !important;
-    background-color: #2f3640 !important;
+    color: $light !important;
+    background-color: $primary !important;
     border: none !important;
 }
 
@@ -50,13 +49,17 @@
     outline: none;
     float: left;
     padding: 0;
-    color: azure !important;
+    color: $light !important;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
     width: 0px;
     font-weight: bold;
     
+}
+
+.search_input::placeholder {
+    color: $light !important;
 }
 
 .search_input::-webkit-input-placeholder {

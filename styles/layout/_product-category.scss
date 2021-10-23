@@ -36,12 +36,35 @@
                 @include productCard;
                 max-width: 16rem !important;
 
+                a {
+                    position: relative;
+
+                    img {
+                        height: 16rem;
+                        object-fit: cover;
+                    }
+
+                    @include overlay;
+
+                    .overlay {
+                        p {
+                            color: $light;
+                        }
+                    }
+
+                    @include respond(tablet) {
+                        .overlay {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                a:hover .overlay {
+                    opacity: 1;
+                }
             }
 
-            img {
-                height:16rem;
-                object-fit: cover;
-            }
+            
         }
 
         .category-selector,

@@ -1,5 +1,6 @@
 .hero-small {
-        background-image: url(/media/hero-bg-02-01.svg);
+        // background-image: url(/media/hero-bg-02-01.svg);
+        background: lighten($color: $primary-light, $amount: 6%);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;

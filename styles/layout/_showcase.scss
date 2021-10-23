@@ -10,6 +10,7 @@
         margin: auto;
 
         .showcase-main {
+            flex: 2;
             max-width: 1140px;
 
             &__img {
@@ -37,6 +38,7 @@
         }
 
         .showcase-side {
+            flex: 1;
             max-width: 380px;
 
             &__img {
@@ -54,29 +56,30 @@
                         height: auto;
                         margin: 0 0 0 1rem;
                         border-radius: 3px;
+                        max-height: 307px;
                     }
 
                     .overlay {
                         left: 1rem;
-                        bottom: 2px;
+                        bottom: 3px;
                         border-bottom-left-radius: 3px;
                         border-bottom-right-radius: 3px;
 
                         p {
-                            color: #f1f1f1;
+                            color: $light;
 
                         }
                     }
+                }
+
+                span:hover .overlay {
+                    opacity: 1;
                 }
 
                 span:first-child {
                     margin-bottom: 2rem;
                 }
                
-            }
-
-            &__img:hover .overlay {
-                opacity: 1;
             }
             
         }
@@ -87,14 +90,9 @@
         }
 
         @include respond(tablet) {
-            .showcase-side {
-                &__img {
+            // .showcase-side {
 
-                    .overlay {
-                        left: 0 !important;
-                    }
-                }
-            }
+            // }
             .overlay {
                 opacity: 1;
             }
@@ -110,6 +108,8 @@
                     img {
                         margin: auto;
                     }
+
+                    
                 }
             }
             .showcase-side {
@@ -123,6 +123,10 @@
 
                     span:first-child {
                         margin:0 2rem 0 0;
+                    }
+
+                    .overlay {
+                        left: 0 !important;
                     }
                 }
             }
@@ -142,14 +146,32 @@
             .showcase-mobile {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
 
-                img {
-                    width: auto;
-                    height: 300px;
-                    object-fit: cover;
-                    border-radius: 3px;
-                    margin-bottom: 2rem;
+                &__wrapper {
+                    position: relative;
+                    margin: auto;
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 3px;
+                    }
+
+                    .overlay {
+                        bottom: 3px;
+                        border-bottom-left-radius: 3px;
+                        border-bottom-right-radius: 3px;
+
+                        p {
+                            color: $light;
+                        }
+                    }
+                }
+
+                .showcase-mobile__wrapper:nth-child(2) {
+                    margin: 2rem 0;
                 }
                 
             }

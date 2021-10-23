@@ -1,5 +1,5 @@
 .custom-button-one {
-    color: $dark;
+    color: $light;
     background-color: $primary;
     border: none;
     border-radius: 25px;
@@ -18,7 +18,7 @@ font-style: normal;
 
 .custom-button-hero {
     color: $light;
-    background-color: $quinary;
+    background-color: $primary;
     border: none;
     border-radius: 25px;
     font-weight: bold;
@@ -37,7 +37,7 @@ font-style: normal;
 
 .custom-button-cta {
     color: $light;
-    background-color: $quaternary;
+    background-color: $primary;
     border: none;
     border-radius: 10px;
     font-weight: bold;
@@ -55,9 +55,21 @@ font-style: normal;
 
 .custom-button-one:hover {
     background-color: lighten($color: $primary, $amount: 20%);
-
+}
+.custom-button-one:hover a {
+    color: lighten($color: $dark, $amount: 20%) !important;
 }
 
 .custom-button-cta:hover {
-    background-color: lighten($color: $quaternary, $amount: 20%);
+    background-color: lighten($color: $primary, $amount: 20%);
+}
+.custom-button-cta:hover a {
+    color: lighten($color: $dark, $amount: 20%) !important;
+}
+
+.custom-button-hero:hover {
+    background-color: lighten($color: $primary, $amount: 20%);
+}
+.custom-button-hero:hover a {
+    color: lighten($color: $dark, $amount: 20%) !important;
 }

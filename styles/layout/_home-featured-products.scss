@@ -14,13 +14,39 @@
             display: none;
         }
 
-        img {
-            height: 16rem;
-            object-fit: cover;
-        }
-
         &__product {
             @include productCard;
+
+            a {
+                
+                img {
+                    height: 16rem;
+                    object-fit: cover;
+                    // width: 100%;
+                }
+
+                .overlay {
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            
+        }
+
+        a {
+            position: relative;
+
+            @include overlay;
+            .overlay {
+                p {
+                    color: $light;
+                }
+            }
+        }
+
+        a:hover .overlay {
+            opacity: 1;
         }
     }
 }
@@ -65,6 +91,27 @@
 
             &__product {
                 @include productCard;
+
+                a {
+                    min-width: 300px;
+                }
+            }
+        }
+
+        .carousel {
+            .card {
+
+                a {
+                    .card-body {
+                        margin-top: -4rem;
+                        padding:1rem;
+                        background-color: rgba(0, 0, 0, 0.4);
+                        p {
+                        color: $light !important;
+
+                        }
+                    }
+                }
             }
         }
     }

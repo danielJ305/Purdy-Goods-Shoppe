@@ -2,12 +2,14 @@
         position: absolute;
         width: 100vw;
         top:0;
-        background: $quinary;
+        background: $primary;
         padding:0;
-        height: 58.2px;
+        height: 35px;
+        display: flex;
+        align-items: center;
 
         p {
-            margin: 1rem 0;
+            // margin: 1rem 0;
         }
 
         i,

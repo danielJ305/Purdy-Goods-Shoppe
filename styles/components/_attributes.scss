@@ -1,8 +1,15 @@
+.attributes-container {
+    background-color: $primary-light;
+    position: relative;
+    z-index: 100;
+}
+
 .attributes {
+    // z-index: 100;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 4rem 0 0 0;
+    padding: 3rem 0 3rem 0;
     
 
     #carouselAttributes {
@@ -11,13 +18,12 @@
 
     &__content {
         margin: auto;
-        padding: 0 2rem 4rem 2rem;
+        padding: 0 2rem;
         margin:0 auto;
 
 
         i {
             font-size: 1.2rem;
-            opacity:0.8;
         }
         label {
             font-size: 1.1rem;
