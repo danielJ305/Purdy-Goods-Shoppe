@@ -63,6 +63,13 @@
         }
     }
 
+    @if $breakpoint==desktop-xl {
+        @media (min-width:1600px) {
+            /* desktops */
+            @content;
+        }
+    }
+
     ;
 }
 

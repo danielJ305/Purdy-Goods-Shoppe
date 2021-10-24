@@ -105,6 +105,14 @@
             }
         }
 
+        @include respond(desktop-xl) {
+            &__products {
+                column-gap: 40px;
+                row-gap: 40px;
+                margin-top: 1rem;
+            }
+        }
+
         @include respond(tablet-sm) {
             &__products {
                 grid-template-columns: repeat(3, 1fr);

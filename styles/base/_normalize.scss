@@ -1,4 +1,4 @@
-// body { font-size:62.5% }
+// body { font-size:62.5;}
 
 html,
 body,
@@ -92,4 +92,53 @@ video {
 
 body {
     background-color: $secondary;
+}
+
+@include respond(desktop-xl) {
+    .container-xl,
+    .container-sm {
+        max-width: 1420px !important;
+    }
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: $light;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $dark;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid $light;
+    /* creates padding around scroll thumb */
+}
+
+//Firefox
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $dark $light;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $light;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $dark;
+    border-radius: 20px;
+    border: 3px solid $light;
 }

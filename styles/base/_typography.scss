@@ -81,4 +81,42 @@ i {
     color: $dark;
 }
 
+@include respond(desktop-xl) {
+    body {
+        font-size: 118.75% !important;
+    }
+
+    // h1 {
+    // font-size:5.38rem * 1.2;
+
+    // }
+    // h2 {
+    // font-size:3.84rem * 1.05;
+
+    // }
+    // h3 {
+    // font-size:2.74rem * 1.05;
+
+    // }
+    // h4 {
+    // font-size:1.96rem * 1.05;
+
+    // }
+    // h5 {
+    // font-size:1.4rem * 1.05;
+
+    // }
+    // p {
+    //     font-size: 1.6rem;
+    // }
+    // label, button {
+
+    // }
+    // li, a {
+
+    // }
+    // i {
+
+    // }
+}
 

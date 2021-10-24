@@ -58,6 +58,9 @@
 }
 
 @include respond(e-reader) {
+    .top_categories {
+        margin-top: 10rem;
+    }
     .featured-wrapper {
         .featured {
             display: flex;
@@ -96,6 +99,8 @@
                     min-width: 300px;
                 }
             }
+
+
         }
 
         .carousel {

@@ -4,6 +4,108 @@
     &__container {
         display: flex;
         justify-content: space-between;
+
+        .product-gallery-wrapper {
+            display: flex;
+            
+            flex-direction: column;
+            
+            .product-section-rest {
+                flex: 2;
+                margin:2rem 2rem 0 0;
+
+                @include respond(e-reader) {
+                    margin: 1rem 0 2rem 0;
+                }
+
+                .product-section-rest-collapse {
+                    margin-top: 1.5rem;
+
+                    button {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                            font-family: bree,
+                            sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: $dark;
+                            font-size: 1rem;
+                        margin:0;
+                        color: $light;
+                        background: $primary !important;
+
+                        i {
+                            font-size: 1rem;
+                        color: $light;
+
+                        }
+                    }
+
+                    .collapse {
+
+                        .card {
+                            flex-direction: row;
+                            flex-wrap: wrap;
+
+                            .product-variation {
+                                display: flex;
+                                margin:0.6rem;
+
+
+                                img {
+                                    width:8rem;
+                                    height: 8rem;
+                                    object-fit: cover;
+                                }
+
+                                &__text {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-left: 1rem;
+
+                                    label[for="variation-property"] {
+                                        max-width: 160px;
+                                    }
+                                }
+                                @include respond(desktop-xl) {
+                                    margin: 2rem;
+
+                                    img {
+                                        width: 6rem;
+                                        height: 6rem;
+                                        object-fit: cover;
+                                    }
+
+                                }
+
+                                @include respond(tablet) {
+                                margin:0.4rem;
+
+                                    img {
+                                        width: 6rem;
+                                        height: 6rem;
+                                        object-fit: cover;
+                                    }
+
+                                }
+
+                                @include respond(e-reader) {
+                                    img {
+                                        width: 8rem;
+                                        height: 8rem;
+                                        object-fit: cover;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         .product-gallery {
             display: flex;
             flex:2;
@@ -44,9 +146,16 @@
                 
             }
 
+            &__array::-webkit-scrollbar {
+                width: 0 !important;
+            }
+
+                &__array::-webkit-scrollbar {
+                width: 0;
+                /* width of the entire scrollbar */
+            }
+
             &__main {
-
-
                 position: relative;
                 width: 100%;
 
@@ -57,6 +166,7 @@
                     height: auto;
                     max-width: 30rem;
                     max-height: 30rem;
+                    position: relative;
 
                     img {
                         object-fit: cover;
@@ -70,11 +180,90 @@
                     @include overlay;
 
                     .overlay {
-                        bottom: 1.4rem;
                         border-bottom-left-radius: 5px;
                         border-bottom-right-radius: 5px;
                         p {
                             color: $light;
+                        }
+                    }
+
+                    .gallery-navigation-wrapper {
+                        position: absolute;
+                        width: 100%;
+                        bottom: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        text-align: center;
+
+                        .gallery-navigation {
+                            display: flex;
+                            justify-content: space-between;
+                            margin: 0 -3rem;
+
+                            &__btn {
+                                width: 3rem;
+                                height: 3rem;
+                                border: none;
+                                background-color: lighten($color: $dark, $amount: 70%);
+                                border-radius: 50%;
+                                transition: background-color 0.15s ease-in;
+
+                                i {
+                                    color: $dark;
+                                    transition: color 0.15s ease-in;
+                                }
+                            }
+
+                            &__btn:hover {
+                                background-color: lighten($color: $dark, $amount: 50%);
+
+                                i {
+                                    color: $light;
+                                }
+                            }
+
+                            &__prev {
+                                // margin-right: 100%;
+                            }
+
+                            &__next {
+                                // margin-left: 100%;
+                            }
+
+
+                        }
+
+                        @include respond(tablet) {
+                            width: 110% !important;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                            .gallery-navigation {
+                                margin: 0 -.3rem;
+                            }
+                        }
+
+                        @include respond(tablet-sm) {
+
+                            .gallery-navigation {
+                                margin: 0 -1rem;
+                            }
+                        }
+
+                        @include respond(e-reader) {
+
+                            .gallery-navigation {
+                                margin: 0 2rem;
+                            }
+                        }
+
+                        @include respond(phone) {
+
+                            .gallery-navigation {
+                                margin: 0 1.6rem;
+                            }
                         }
                     }
                 }
@@ -83,95 +272,9 @@
                     opacity: 1;
                 }
 
-
-                .gallery-navigation-wrapper {
-                    position: absolute;
-                    width: 100%;
-                    bottom: 50%;
-
-                    .gallery-navigation {
-                        display: flex;
-                        justify-content: space-between;
-                        margin: 0 2rem;
-                        top: 3rem;
-
-                        &__btn {
-                            width:3rem;
-                            height: 3rem;
-                            border: none;
-                            background-color: lighten($color: $dark, $amount: 70%);
-                            border-radius: 50%;
-                            transition: background-color 0.15s ease-in;
-                            
-                            i {
-                                color: $dark;
-                                transition: color 0.15s ease-in;
-                            }
-                        }
-
-                        &__btn:hover {
-                            background-color: lighten($color: $dark, $amount: 50%);
-
-                            i {
-                                color: $light;
-                            }
-                        }
-
-                        &__prev {
-                            // margin-right: 100%;
-                        }
-
-                        &__next {
-                            // margin-left: 100%;
-                        }
-
-
-                    }
-
-                    @include respond(tablet) {
-                        width:110% !important;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-
-                        .gallery-navigation {
-                            margin: 0 2.22rem;     
-                        }
-                    }
-
-                    @include respond(tablet-sm) {
-
-                        .gallery-navigation {
-                            margin: 0 4rem;
-                        }
-                    }
-
-                    @include respond(e-reader) {
-
-                        .gallery-navigation {
-                            margin: 0 2rem;
-                        }
-                    }
-
-                    @include respond(phone) {
-
-                        .gallery-navigation {
-                            margin: 0 1.6rem;
-                        }
-                    }
-                }
-
-                @include respond(phone) {
-                    &__img-wrapper {
-                        .overlay {
-                            bottom: 0rem;
-                        }
-                    }
-                }
-
                 @include respond(tablet) {
                     &__img-wrapper {
                         .overlay {
-                            bottom: 5.4rem;
                             opacity: 1;
                         }
                     }
@@ -182,7 +285,11 @@
             }
 
             @include respond(e-reader) {
-                flex-direction: column-reverse;
+                flex-direction: column;
+
+                .product-gallery {
+                    flex-direction: column-reverse;
+                }
 
                 &__array {
 
@@ -213,63 +320,27 @@
                 margin:1rem 0 2rem 0;
                 font-size: $md-md;
                 font-weight: bold;
+                font-size: $md;
             }
 
             button {
                 margin-bottom: 1.5rem;
             }
 
-            label {
-                font-size: $sm-md;
+                        label[for="section-name"] {
+                            margin-top: 0.5rem;
+                        }
+
+            label[for="product-property"] {
+                margin-bottom: 1rem;
             }
 
             &__description {
                 margin-top: 0.6rem;
-                max-height: 20rem;
+                max-height: 23rem;
                 overflow: hidden;
                 overflow-y: scroll;
                 padding-right: 1.3rem;
-            }
-
-            body::-webkit-scrollbar {
-                width: 12px;
-                /* width of the entire scrollbar */
-            }
-
-            body::-webkit-scrollbar-track {
-                background: $light;
-                /* color of the tracking area */
-            }
-
-            body::-webkit-scrollbar-thumb {
-                background-color: $dark;
-                /* color of the scroll thumb */
-                border-radius: 20px;
-                /* roundness of the scroll thumb */
-                border: 3px solid $light;
-                /* creates padding around scroll thumb */
-            }
-
-            //Firefox
-
-            * {
-                scrollbar-width: thin;
-                scrollbar-color: $dark $light;
-            }
-
-            /* Works on Chrome, Edge, and Safari */
-            *::-webkit-scrollbar {
-                width: 12px;
-            }
-
-            *::-webkit-scrollbar-track {
-                background: $light;
-            }
-
-            *::-webkit-scrollbar-thumb {
-                background-color: $dark;
-                border-radius: 20px;
-                border: 3px solid $light;
             }
 
         }
