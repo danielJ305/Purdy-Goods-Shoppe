@@ -3,19 +3,31 @@
     position:absolute;
     top:35px;
     width: 100vw;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0rem;
     background-color: $secondary !important;
 
     img {
         object-fit: cover;
-        width: 4rem;
+        width: 8.5rem;
         height: auto;
         
+        @include respond(tablet-sm) {
+                    width: 7.5rem;
+        }
+                @include respond(phone) {
+                    width: 7rem;
+                }
     }
 
     @media only screen and (max-width:600px) {
         top: 0px;
+    }
+
+    @include respond(tablet-sm) {
+    padding-top: 0.5rem;
+
+        padding-bottom: 0.5rem;
     }
 }
 

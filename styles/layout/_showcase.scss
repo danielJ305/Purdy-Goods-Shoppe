@@ -101,6 +101,7 @@
         
         @include respond(tablet-sm) {
             flex-direction: column;
+            max-height: 100%;
 
             .showcase-main {
 
@@ -140,6 +141,8 @@
     }
 
     @include respond(e-reader) {
+        
+
             .showcase-side, .showcase-main {
                 display:none;
             }

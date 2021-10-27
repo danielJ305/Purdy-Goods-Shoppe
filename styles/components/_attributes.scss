@@ -1,5 +1,10 @@
 .attributes-container {
     // background-color: $primary-light;
+    border-top: 10px solid;
+    border-top-width: 10px;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #ffe983, #ecbb5d, #ffe983, #ffffc5);
     position: relative;
     z-index: 100;
 }

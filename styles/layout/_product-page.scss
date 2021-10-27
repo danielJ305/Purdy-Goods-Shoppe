@@ -6,8 +6,7 @@
         justify-content: space-between;
 
         .product-gallery-wrapper {
-            display: flex;
-            
+            display: flex; 
             flex-direction: column;
             
             .product-section-rest {
@@ -17,92 +16,65 @@
                 @include respond(e-reader) {
                     margin: 1rem 0 2rem 0;
                 }
+        
 
-                .product-section-rest-collapse {
-                    margin-top: 1.5rem;
 
-                    button {
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                            font-family: bree,
-                            sans-serif;
-                            font-weight: 400;
-                            font-style: normal;
-                            color: $dark;
-                            font-size: 1rem;
-                        margin:0;
-                        color: $light;
-                        background: $primary !important;
+            .card {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
 
-                        i {
-                            font-size: 1rem;
-                        color: $light;
+                .product-variation {
+                    display: flex;
+                    margin:0.6rem;
 
+                        img {
+                            width:7rem;
+                            height: 7rem;
+                            object-fit: cover;
                         }
-                    }
 
-                    .collapse {
+                        &__text {
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 1rem;
 
-                        .card {
-                            flex-direction: row;
-                            flex-wrap: wrap;
-
-                            .product-variation {
-                                display: flex;
-                                margin:0.6rem;
-
-
-                                img {
-                                    width:8rem;
-                                    height: 8rem;
-                                    object-fit: cover;
-                                }
-
-                                &__text {
-                                    display: flex;
-                                    flex-direction: column;
-                                    margin-left: 1rem;
-
-                                    label[for="variation-property"] {
-                                        max-width: 160px;
-                                    }
-                                }
-                                @include respond(desktop-xl) {
-                                    margin: 2rem;
-
-                                    img {
-                                        width: 6rem;
-                                        height: 6rem;
-                                        object-fit: cover;
-                                    }
-
-                                }
-
-                                @include respond(tablet) {
-                                margin:0.4rem;
-
-                                    img {
-                                        width: 6rem;
-                                        height: 6rem;
-                                        object-fit: cover;
-                                    }
-
-                                }
-
-                                @include respond(e-reader) {
-                                    img {
-                                        width: 8rem;
-                                        height: 8rem;
-                                        object-fit: cover;
-                                    }
-
-                                }
+                            label[for="variation-property"] {
+                                max-width: 160px;
                             }
                         }
-                    }
-                }
+                        @include respond(desktop-xl) {
+                            margin: 2rem;
+
+                            img {
+                                width: 6rem;
+                                height: 6rem;
+                                object-fit: cover;
+                            }
+
+                        }
+
+                        @include respond(tablet) {
+                        margin:0.4rem;
+
+                            img {
+                                width: 5rem;
+                                height: 5rem;
+                                object-fit: cover;
+                            }
+
+                        }
+
+                        @include respond(e-reader) {
+                            img {
+                                width: 8rem;
+                                height: 8rem;
+                                object-fit: cover;
+                            }
+
+                        }
+                    } 
+                }   
             }
         }
 
@@ -164,7 +136,6 @@
                     padding:0 2rem;
                     width: 100%;
                     height: auto;
-                    max-width: 30rem;
                     max-height: 30rem;
                     position: relative;
 
@@ -200,13 +171,13 @@
                         .gallery-navigation {
                             display: flex;
                             justify-content: space-between;
-                            margin: 0 -3rem;
+                            margin: 0 3rem;
 
                             &__btn {
                                 width: 3rem;
                                 height: 3rem;
                                 border: none;
-                                background-color: lighten($color: $dark, $amount: 70%);
+                                background-color: lighten($color: #0d0d0daf, $amount: 70%);
                                 border-radius: 50%;
                                 transition: background-color 0.15s ease-in;
 
@@ -241,14 +212,14 @@
                             transform: translate(-50%, -50%);
 
                             .gallery-navigation {
-                                margin: 0 -.3rem;
+                                margin: 0 5rem;
                             }
                         }
 
                         @include respond(tablet-sm) {
 
                             .gallery-navigation {
-                                margin: 0 -1rem;
+                                margin: 0 5rem;
                             }
                         }
 
@@ -337,10 +308,25 @@
 
             &__description {
                 margin-top: 0.6rem;
-                max-height: 23rem;
-                overflow: hidden;
-                overflow-y: scroll;
                 padding-right: 1.3rem;
+                max-height: 15rem;
+                overflow: hidden;
+                transition: max-height 0.5s ease-in-out;
+            }
+
+            .learn-description {
+                text-align: center;
+                color: rgba(0, 0, 0, 0.592);
+                padding: 1rem 2rem;
+                background: rgba(0, 0, 0, 0.129);
+                cursor: pointer;
+                border-radius: 10px;
+                margin-top:0.5rem
+            }
+
+            .open-description {
+                max-height: 100%;
+                overflow: visible;
             }
 
         }
