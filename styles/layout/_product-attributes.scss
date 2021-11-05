@@ -1,9 +1,9 @@
 .product_attributes {
     background-color: $primary-light;
-    padding: 3rem 0;
+    padding: $xxl 0;
 
     @media only screen and (max-width: 888px) {
-        padding:4rem 0;
+        padding:($sm * 4) 0;
     }
 
     .product-attribute-wrapper {
@@ -11,38 +11,56 @@
             flex-wrap: wrap;
 
         .card {
-            margin: 0 1rem;
-            max-width: 20rem;
+            margin: 0 $sm;
+            max-width: $xxl-large;
             flex-direction: column-reverse;
             flex: 1;
 
             .card-body {
                 background-color: $secondary;
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
+                border-top-right-radius: $sm;
+                border-top-left-radius: $sm;
             }
 
             @include respond(tablet) {
-                max-width: 16rem;
-                min-width: 16rem;
+                max-width: $sm * 16;
+                min-width: $sm * 16;
             }
 
             @media only screen and (max-width: 888px) {
-                margin-top: 2rem;
+                margin-top: $l;
             }
 
             label {
                 text-align: center;
-                padding:1rem;
+                padding:$sm;
             }
 
             img {
-                height: 19rem;
+                height: $sm * 16;
                 object-fit: cover;
 
                 @include respond(tablet) {
-                                    height: 16rem;
+                    height: $sm * 16;
 
+                }
+            }
+        }
+    }
+
+    @include respond(desktop-xxl) {
+        padding: $large 0;
+
+        .product-attribute-wrapper {
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .card {
+
+                max-width: $xxl-large * 1.5;
+
+                img {
+                    height: $sm * 30;
                 }
             }
         }
@@ -50,14 +68,29 @@
 }
 
 .product_attributes-svg-top {
-    margin-bottom: -1rem;
+    margin-top: 3rem;
+    transform: scale(1.1);
+    height: 202.65px;
+    overflow: hidden;
+    scrollbar-width: 0;
 }
 
 .product_attributes-svg-bottom {
-// position: absolute;
-transform: scale(1.1);
-// top: 0;
-// z-index: -1;
-height: 202.65px;
+    transform: scale(1.1);
+    height: 202.65px;
+    overflow: hidden;
+    scrollbar-width: 0;
+    height: 202.65px;
+}
 
+@include respond(desktop-xxl) {
+    .product_attributes-svg-top {
+        margin-top: $medium;
+        height: 300px;
+    }
+
+    .product_attributes-svg-bottom {
+        height: 300px;
+        margin-bottom: $medium;
+    }
 }

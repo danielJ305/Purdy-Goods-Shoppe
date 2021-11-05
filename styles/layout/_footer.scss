@@ -1,12 +1,12 @@
 .footer {
-    padding: 2rem 0;
+    padding: $l 0;
     .footer-wrapper {
         flex-wrap: wrap;
     
         .footer-contact-address {
-            margin:2rem 0;
+            margin:$l 0;
             h5 {
-                margin-bottom: 2rem;
+                margin-bottom: $l;
             }
 
             ul {
@@ -18,10 +18,10 @@
                     }
 
                     i {
-                        width:1rem;
-                        height: 1rem;
-                        font-size: 1.2rem;
-                        margin-right: 0.6rem;
+                        width:$sm;
+                        height: $sm;
+                        font-size: $sm-md;
+                        margin-right: $xs * 2;
                         opacity: .6;
                     }
 
@@ -31,17 +31,20 @@
         }
 
         .footer-navigation {
-            margin: 2rem 0;
+            margin: $l 0;
             h5 {
-                margin-bottom: 2rem;
+                margin-bottom: $l;
             }
             
             li {
-                padding-bottom: 1.5rem;
+                padding-bottom: $md;
                 text-align: right;
 
                 a {
                     color: inherit;
+                }
+                a:hover {
+                    opacity: 0.5;
                 }
             }
         }
@@ -69,7 +72,7 @@
 
 .footer-bottom {
     background: $tertiary;
-    padding:1rem 0;
+    padding:$sm 0;
 
     p {
         text-align: center;

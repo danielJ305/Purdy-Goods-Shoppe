@@ -2,10 +2,10 @@
     color: $light;
     background-color: $primary;
     border: none;
-    border-radius: 25px;
+    border-radius: $xl;
     font-weight: bold;
     font-size: $md;
-    width:12rem;
+        width: $large * 1.2;
     padding:$xs-md;
 
     a {
@@ -20,10 +20,10 @@ font-style: normal;
     color: $light;
     background-color: $primary;
     border: none;
-    border-radius: 25px;
+    border-radius: $xl;
     font-weight: bold;
     font-size: $md;
-    width: 12rem;
+    width: $large * 1.2;
     padding: $xs-md;
 
     a {
@@ -39,10 +39,10 @@ font-style: normal;
     color: $light;
     background-color: $primary;
     border: none;
-    border-radius: 10px;
+    border-radius: $sm;
     font-weight: bold;
     font-size: $sm-md;
-    width: 10rem;
+    width: $large * 1.2;
     padding: $xs-md;
 
     a {
@@ -72,4 +72,13 @@ font-style: normal;
 }
 .custom-button-hero:hover a {
     color: lighten($color: $dark, $amount: 20%) !important;
+}
+
+@include respond(desktop-xxl) {
+    .custom-button-one,
+    .custom-button-hero,
+    .custom-button-cta {
+        width: $large * 1.4;
+
+    }
 }

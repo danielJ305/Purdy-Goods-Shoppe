@@ -20,6 +20,29 @@ $sm-md:1.2rem;
 $md: 1.5rem;
 $md-md: 1.7rem;
 $l: 2rem;
-$l-md:2.2;
+$l-md:2.2rem;
 $xl: 2.5rem;
-$xl-md: 2.7;
+$xl-md: 2.7rem;
+$xxl: 3rem;
+$medium: 5rem;
+$large: 10rem;
+$xl-large: 15rem;
+$xxl-large: 20rem;
+
+@include respond(desktop-xxl) {
+    $xs: 0.5rem * 1.25 !important;
+    $xs-md: 0.7rem * 1.25 !important;
+    $sm: 1rem * 1.25 !important;
+    $sm-md:1.2rem * 1.25 !important;
+    $md: 1.5rem * 1.25 !important;
+    $md-md: 1.7rem * 1.25 !important;
+    $l: 2rem * 1.25 !important;
+    $l-md:2.2rem * 1.25 !important;
+    $xl: 2.5rem * 1.25 !important;
+    $xl-md: 2.7rem * 1.25 !important;
+    $xxl: 3rem * 1.25 !important;
+    $medium: 5rem * 1.25 !important;
+    $large: 10rem * 1.25 !important;
+    $xl-large: 15rem * 1.25 !important;
+    $xxl-large: 20rem * 1.25 !important;
+}

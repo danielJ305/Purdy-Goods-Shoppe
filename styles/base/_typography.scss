@@ -71,9 +71,9 @@ text-decoration: none;
 list-style-type: none;
 }
 
-a:hover {
-    color: lighten($color: $dark, $amount: 25%)
-}
+// a:hover {
+//     color: lighten($color: $dark, $amount: 25%);
+// }
 
 i {
     color: $dark;
@@ -83,38 +83,76 @@ i {
     body {
         font-size: 118.75% !important;
     }
-
-    // h1 {
-    // font-size:5.38rem * 1.2;
-
-    // }
-    // h2 {
-    // font-size:3.84rem * 1.05;
-
-    // }
-    // h3 {
-    // font-size:2.74rem * 1.05;
-
-    // }
-    // h4 {
-    // font-size:1.96rem * 1.05;
-
-    // }
-    // h5 {
-    // font-size:1.4rem * 1.05;
-
-    // }
-    // p {
-    //     font-size: 1.6rem;
-    // }
-    // label, button {
-
-    // }
-    // li, a {
-
-    // }
-    // i {
-
-    // }
 }
 
+@include respond(desktop-xxl) {
+    body {
+        font-size: 125% !important;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-family: basic-sans, sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color: $dark;
+        letter-spacing: -.1rem;
+    }
+
+    h2 {
+        font-size: 4.2rem;
+        font-family: basic-sans,
+            sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        color: $dark;
+    }
+
+    h3 {
+        font-size: 3rem;
+        font-family: basic-sans,
+            sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: $dark;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+        font-family: basic-sans,
+            sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        color: $dark;
+    }
+
+    h5 {
+        font-size: 2rem;
+
+
+    }
+
+    p,
+    span {
+        font-size: 125% !important;
+
+    }
+
+    label,
+    button {
+        font-size: 125% !important;
+
+
+    }
+
+    li,
+    a {
+        font-size: 125% !important;
+
+    }
+
+    i {
+        font-size: 125% !important;
+
+    }
+}

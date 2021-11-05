@@ -6,7 +6,7 @@
         &__selector {
             display: flex;
             justify-content: space-between;
-            padding:4rem 0 1rem 0;
+            padding:($sm * 4) 0 $sm 0;
 
             .sort {
         
@@ -20,7 +20,7 @@
                     border-top: .4em solid;
                     border-right: .4em solid transparent;
                     border-left: .4em solid transparent;
-                    margin-left: 10px;
+                    margin-left: $sm;
                 }
             }
         }
@@ -29,18 +29,17 @@
             margin:auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            column-gap: 20px;
-            row-gap: 20px;
+            column-gap: $l;
+            row-gap: $l;
 
             .products {
                 @include productCard;
-                max-width: 16rem !important;
 
                 a {
                     position: relative;
 
                     img {
-                        height: 16rem;
+                        height: $sm * 16;
                         object-fit: cover;
                     }
 
@@ -70,7 +69,7 @@
         .category-selector,
         .sort {
             .btn {
-                border-radius: 25px;
+                border-radius: $xl;
                 letter-spacing: 0.5px;
                 background: none !important;
                 border: solid 2px $dark;
@@ -91,7 +90,7 @@
                     a, button {
                         padding-top:.6rem;
                         padding-bottom:.6rem;
-                        font-size: 1.2rem;
+                        font-size: $sm-md;
                         letter-spacing: 0.5px;
                     }
                 }
@@ -105,11 +104,50 @@
             }
         }
 
+        @include respond(desktop-xxl) {
+            &__selector {
+                padding-top: $medium;
+            }
+            &__products {
+                column-gap: 4rem;
+                row-gap: 4rem;
+
+                .products {
+
+                    img {
+                        height: 22.1rem !important;
+                        width: 100%;
+                    }
+
+                    .overlay {
+                        p {
+                            font-size: $md !important;
+                        }
+                    }
+                }
+            }
+        }
+
         @include respond(desktop-xl) {
             &__products {
-                column-gap: 40px;
-                row-gap: 40px;
-                margin-top: 1rem;
+                column-gap: $l-md;
+                row-gap: $l-md;
+                margin-top: $sm;
+            }
+        }
+
+        @include respond(tablet) {
+            &__products {
+                column-gap: $sm-md;
+                row-gap: $sm-md;
+
+                .products {
+                    img {
+                        width: 13rem;
+                        max-height: 13rem;
+                    }
+                }
+
             }
         }
 
@@ -124,7 +162,7 @@
              &__selector {
                 .category-selector {
                         width: 100%;
-                        margin-right: 1rem;
+                        margin-right: $sm;
                     .btn {
                         width: 100%;
                     }
@@ -140,7 +178,13 @@
         @include respond(phone) {
             &__products {
                 grid-template-columns: repeat(1, 1fr);
-
+                
+                .products {
+                    img {
+                        width: 16rem;
+                        max-height: 16rem;
+                    }
+                }
             }
         }
     }
@@ -149,13 +193,13 @@
 .pagination-container {
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: $xxl;
 
     ul {
         li {
-            width:3rem;
-            height: 3rem;
-            margin:auto 1rem auto 1rem;
+            width:$xxl;
+            height: $xxl;
+            margin:auto $sm auto $sm;
             background: lighten($color: $primary, $amount: 10%);
             padding:0.4rem 0 0 0 ;
             border-radius: 50%;
@@ -163,6 +207,7 @@
             a {
                 color: $dark !important;
                 font-weight: 600;
+                opacity: 0.8;
             }
 
              a:hover {
@@ -176,11 +221,26 @@
         }
     }
 
+    @include respond(desktop-xxl) {
+        ul {
+            li {
+                padding-top: 1rem;
+                width:$medium * 0.9;
+                height: $medium * 0.9;
+            }
+
+        }
+
+        .pagination .page-item .page-link {
+            font-size: $md !important;
+        }
+    }
+
     @include respond(e-reader) {
         ul {
             li {
-                width: 2.5rem;
-                height: 2.5rem;
+                width: $xl;
+                height: $xl;
                 margin:auto 0.6rem auto 0.6rem;
                 padding:0.2rem 0 0 0;
             }

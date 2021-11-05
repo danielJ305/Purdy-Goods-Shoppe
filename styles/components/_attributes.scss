@@ -1,9 +1,9 @@
 .attributes-container {
     // background-color: $primary-light;
-    border-top: 10px solid;
-    border-top-width: 10px;
+    border-top: $sm solid;
+    border-top-width: $sm;
     border-image-slice: 1;
-    border-width: 5px;
+    border-width: $xs;
     border-image-source: linear-gradient(to left, #ffe983, #ecbb5d, #ffe983, #ffffc5);
     position: relative;
     z-index: 100;
@@ -14,7 +14,7 @@
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 0 3rem 0;
+    padding: $xxl 0 $xxl 0;
     
 
     #carouselAttributes {
@@ -23,30 +23,30 @@
 
     &__content {
         margin: auto;
-        padding: 0 2rem;
+        padding: 0 $l;
         margin:0 auto;
 
 
         i {
-            font-size: 1.2rem;
+            font-size: $sm-md;
         }
         label {
-            font-size: 1.1rem;
+            font-size: $sm-md;
             font-weight: 600;
-            padding-left:.5rem;
+            padding-left:$xs;
         }
         p {
-            width:10rem;
-            margin-top:1.2rem;
+            max-width:15rem;
+            margin-top:$sm-md;
         }
     }
 }
 
 @include respond(tablet-sm) {
     .attributes {
-        padding-top:1rem;
+        padding-top:$sm;
         .attributes__content {
-            margin-top: 2rem;
+            margin-top: $l;
         }
     }
 }
@@ -61,18 +61,18 @@
 
             .carousel-item {
                 i {
-                    font-size: 1rem;
+                    font-size: $sm;
                     opacity: 0.8;
                 }
 
                 label {
                     font-weight: 600;
-                    padding-left: .5rem;
+                    padding-left: $xs;
                 }
 
                 p {
                     width: 10rem;
-                    margin-top: 1.2rem;
+                    margin-top: $sm-md;
                 }
             }
         }

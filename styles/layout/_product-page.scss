@@ -1,5 +1,5 @@
 .product-section {
-    margin:13rem 0 4rem 0;
+    margin:($sm * 10) 0 ($sm * 4) 0;
     
     &__container {
         display: flex;
@@ -11,10 +11,10 @@
             
             .product-section-rest {
                 flex: 2;
-                margin:2rem 2rem 0 0;
+                margin:$l $l 0 0;
 
                 @include respond(e-reader) {
-                    margin: 1rem 0 2rem 0;
+                    margin: $sm 0 $l 0;
                 }
         
 
@@ -29,22 +29,31 @@
                     margin:0.6rem;
 
                         img {
-                            width:7rem;
-                            height: 7rem;
+                            width:($sm * 7);
+                            height: ($sm * 7);
                             object-fit: cover;
                         }
 
                         &__text {
                             display: flex;
                             flex-direction: column;
-                            margin-left: 1rem;
+                            margin-left: $sm;
 
                             label[for="variation-property"] {
                                 max-width: 160px;
                             }
                         }
+
+                        @include respond(desktop-xxl) {
+                            img {
+                                width: 8rem !important;
+                                height: 8rem !important;
+                            }
+
+                        }
+
                         @include respond(desktop-xl) {
-                            margin: 2rem;
+                            margin: $l;
 
                             img {
                                 width: 6rem;
@@ -58,8 +67,8 @@
                         margin:0.4rem;
 
                             img {
-                                width: 5rem;
-                                height: 5rem;
+                                width: $medium;
+                                height: $medium;
                                 object-fit: cover;
                             }
 
@@ -67,8 +76,8 @@
 
                         @include respond(e-reader) {
                             img {
-                                width: 8rem;
-                                height: 8rem;
+                                width: $sm * 8;
+                                height: $sm * 8;
                                 object-fit: cover;
                             }
 
@@ -92,9 +101,9 @@
                 &__img-wrapper {
                     width: 100%;
                     height: auto;
-                    max-width: 6rem;
-                    max-height: 6rem;
-                    margin: 0 0 1rem 0;
+                    max-width: $sm * 6;
+                    max-height: $sm * 6;
+                    margin: 0 0 $sm 0;
                     list-style-type: none;
                     border: 5px;
 
@@ -133,10 +142,11 @@
 
                 &__img-wrapper {
                     margin: auto;
-                    padding:0 2rem;
+                    padding:0 $l;
                     width: 100%;
                     height: auto;
                     max-height: 30rem;
+                    max-width: 70rem;
                     position: relative;
 
                     img {
@@ -226,7 +236,7 @@
                         @include respond(e-reader) {
 
                             .gallery-navigation {
-                                margin: 0 2rem;
+                                margin: 0 $l;
                             }
                         }
 
@@ -255,6 +265,33 @@
                 
             }
 
+            @include respond(desktop-xxl) {
+                &__array {
+                    max-height: 50rem !important;
+
+                        &__img-wrapper {
+                            max-width: $sm * 8;
+                            max-height: $sm * 8;
+
+                        img {
+                            height: 6rem;
+                        }
+                    }
+                }
+
+                &__main {
+
+                    &__img-wrapper {
+                        max-height: 50rem !important;
+
+
+                        img {
+                            height: 50rem !important;
+                        }
+                    }
+                }
+            }
+
             @include respond(e-reader) {
                 flex-direction: column;
 
@@ -267,7 +304,7 @@
 
                     justify-content: center;
                     &__img-wrapper {
-                        margin: 2rem 0.5rem;
+                        margin: $l 0.5rem;
                     }
                 }
 
@@ -288,7 +325,7 @@
             }
 
             &__price {
-                margin:1rem 0 2rem 0;
+                margin:$sm 0 $l 0;
                 font-size: $md-md;
                 font-weight: bold;
                 font-size: $md;
@@ -303,7 +340,7 @@
                         }
 
             label[for="product-property"] {
-                margin-bottom: 1rem;
+                margin-bottom: $sm;
             }
 
             &__description {
@@ -317,7 +354,7 @@
             .learn-description {
                 text-align: center;
                 color: rgba(0, 0, 0, 0.592);
-                padding: 1rem 2rem;
+                padding: $sm $l;
                 background: rgba(0, 0, 0, 0.129);
                 cursor: pointer;
                 border-radius: 10px;
@@ -341,9 +378,13 @@
         @include respond(e-reader) {
             margin-top: 10rem;
             .product-description {
-                margin-top: 1rem;
+                margin-top: $sm;
             }
         }
+    }
+
+    @include respond(desktop-xxl) {
+        margin:($sm * 16) 0 ($sm * 4) 0;
     }
 
     @include respond(e-reader) {

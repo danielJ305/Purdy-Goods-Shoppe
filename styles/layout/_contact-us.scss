@@ -2,7 +2,7 @@
     padding:4rem 2rem;
 
     h2 {
-            font-size:3.84rem * .6 !important;
+            font-size:3.84rem * .6;
             font-family: basic-sans,
             sans-serif !important;
             font-weight: 200 !important;
@@ -17,6 +17,33 @@
             i {
                 padding-bottom: 1rem;
                 font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    @include respond(desktop-xxl) {
+        h2 {
+            font-size: 4rem !important;
+        }
+
+        #contact-form {
+            input {
+                font-size: $l;
+                font-family: proxima-nova-condensed,
+                sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: $dark;
+            }
+
+            textarea {
+                font-size: $l;
+                font-family: proxima-nova-condensed,
+                sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                color: $dark;
             }
         }
     }

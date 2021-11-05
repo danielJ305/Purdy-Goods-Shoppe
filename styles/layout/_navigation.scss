@@ -9,25 +9,35 @@
 
     img {
         object-fit: cover;
-        width: 8.5rem;
+        width: $large * 0.85;
         height: auto;
+
+        @include respond(desktop-xxl) {
+            width: 12rem;
+        }
         
         @include respond(tablet-sm) {
                     width: 7.5rem;
         }
-                @include respond(phone) {
-                    width: 7rem;
-                }
+
+        @include respond(phone) {
+            width: 7rem;
+        }
     }
 
     @media only screen and (max-width:600px) {
         top: 0px;
     }
 
-    @include respond(tablet-sm) {
-    padding-top: 0.5rem;
+    @include respond(desktop-xxl) {
+        padding-top: $sm;
+        padding-bottom: $sm;
+        top: 50px;
+    } 
 
-        padding-bottom: 0.5rem;
+    @include respond(tablet-sm) {
+        padding-top: $xs;
+        padding-bottom: $xs;
     }
 }
 
@@ -36,10 +46,14 @@
 .navbar #navbarSupportedContent {
     ul {
         margin-left: auto;
-        margin-right: 2rem !important;
+        margin-right: $l !important;
 
         li {
-            margin: 0 1rem;
+            margin: 0 $sm;
+
+            a:hover {
+                opacity: 0.5;
+            }
         }
     }
 }
@@ -48,12 +62,12 @@
 
 @media only screen and (max-width:992px) {
     #navbarSupportedContent {
-        padding-top: 1rem;
+        padding-top: $sm;
 
         ul {
             li {
                 a {
-                    padding: 1.2rem .6rem
+                    padding: $sm-md ($xs * 1.05);
                 }
             }
         }

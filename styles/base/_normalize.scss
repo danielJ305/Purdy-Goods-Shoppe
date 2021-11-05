@@ -1,4 +1,4 @@
-// body { font-size:62.5;}
+body { font-size:62.5;}
 
 html,
 body,
@@ -97,7 +97,15 @@ body {
 @include respond(desktop-xl) {
     .container-xl,
     .container-sm {
-        max-width: 1420px !important;
+        max-width: 1420px;
+    }
+}
+
+@include respond(desktop-xxl) {
+
+    .container-xl,
+    .container-sm {
+        max-width: 2000px;
     }
 }
 

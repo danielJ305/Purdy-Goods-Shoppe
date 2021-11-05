@@ -1,5 +1,5 @@
 .hero-small {
-            background-image: url(/media/hero-bg-pink1-01.jpg);
+            background-image: url(/media/hero-bg-pink1.jpg);
         // background: lighten($color: $primary-light, $amount: 6%);
         background-repeat: no-repeat;
         background-position: center center;
@@ -15,6 +15,12 @@
         p {
             margin-top: -0.5rem;
         }
+    }
+}
+
+@include respond(desktop-xxl) {
+    .hero-small {
+        min-height: 50vh;
     }
 }
 
